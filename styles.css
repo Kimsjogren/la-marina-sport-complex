@@ -301,6 +301,7 @@ footer a:hover { color: #fff; }.footer-bottom { position: absolute; left: clamp(
   .party-content { padding: 82px 16px 56px; }
   .table-booking { padding: 22px 16px; border-radius: 24px; }
   .table-booking input,.table-booking select { border-radius: var(--pill); }
+  .table-booking input[type="date"] { width: min(100%, 260px); height: 38px; min-height: 38px; padding-inline: 12px; align-self: flex-start; }
   .location { gap: 36px; }
   .location-copy li { padding: 14px; margin-bottom: 8px; border: 0; border-radius: 16px; background: rgba(255,255,255,.72); }
   .map-card { min-height: 360px; border-width: 7px; border-radius: 28px; }
