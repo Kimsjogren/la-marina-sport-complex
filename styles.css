@@ -264,7 +264,7 @@ footer a:hover { color: #fff; }.footer-bottom { position: absolute; left: clamp(
   .menu-button { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--cream); color: var(--ink); font-size: 18px; }
   .main-nav { position: fixed; top: 80px; left: 12px; right: 12px; padding: 12px 18px 18px; border: 1px solid var(--line); border-radius: var(--radius-md); box-shadow: var(--shadow); }
   .main-nav a:last-child { border-bottom: 0; }
-  .hero { margin-top: -70px; padding: 150px 16px 22px; background-position: 54% center; }
+  .hero { margin-top: -70px; padding: 150px 16px 22px; background-size: 100% auto; background-position: center top; background-repeat: no-repeat; background-color: var(--blue-dark); }
   .hero-content { padding: 0 4px; }
   .hero-content .eyebrow { margin-bottom: 12px; }
   h1 { font-size: clamp(39px, 11.5vw, 52px); }
