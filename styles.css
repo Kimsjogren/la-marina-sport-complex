@@ -68,7 +68,7 @@ h2 { font-size: clamp(38px, 4vw, 62px); letter-spacing: -.025em; }
 .intro { padding-top: 165px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 10vw; background: var(--cream); }
 .intro-copy > p { margin: 0; max-width: 690px; color: var(--muted); font-size: 17px; line-height: 1.8; }
 .quick-facts { display: flex; margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--line); }
-.quick-facts > span { flex: 1; color: var(--muted); font-size: 11px; }
+.quick-facts > span { flex: 1; color: var(--muted); font-size: 11px; text-align: center; }
 .quick-facts strong { display: block; margin-bottom: 5px; color: var(--blue); font-family: "Playfair Display", serif; font-size: 29px; font-weight: 500; }
 .apartments { background: #fff; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 50px; }
