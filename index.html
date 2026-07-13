@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Holiday apartments, pool parties and poolside dining at La Marina Sport Complex in San Fulgencio, Alicante." />
+    <title>La Marina Sport Complex | Holidays on the Costa Blanca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lobster&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="demo-ribbon" data-i18n="demoRibbon">Concept website · Apartment details, prices and some information are examples</div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="La Marina Sport Complex, startsida">
+        <span class="brand-plaque"><strong>La Marina</strong><small>SPORT COMPLEX</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-label="Open menu" data-i18n-aria="openMenu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Huvudmeny">
+        <a href="#apartments" data-i18n="navStay">Apartments</a>
+        <a href="#pool-party" data-i18n="navParty">Pool party & dining</a>
+        <a href="#pool-passes" data-i18n="navPasses">Pool passes</a>
+        <a href="#complex" data-i18n="navComplex">The complex</a>
+        <a href="#location" data-i18n="navLocation">Location</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switcher" aria-label="Välj språk">
+          <button class="active" type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="es">ES</button>
+        </div>
+        <a class="button button-small" href="#book" data-i18n="bookNow">Book an apartment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow light" data-i18n="heroEyebrow">San Fulgencio · Costa Blanca</p>
+          <h1 data-i18n="heroTitle">Sunny, easy days in La Marina</h1>
+          <p data-i18n="heroText">Four welcoming holiday apartments with the pool, restaurant and Costa Blanca lifestyle right outside your door.</p>
+          <div class="hero-links">
+            <a class="button" href="#book" data-i18n="seeHomes">Book an apartment</a>
+            <a class="button button-ghost" href="#table-book" data-i18n="bookTable">Book a table</a>
+          </div>
+        </div>
+
+        <form class="search-card" id="book">
+          <div class="search-card-heading">
+            <span class="eyebrow" data-i18n="findStay">Apartment booking</span>
+            <span class="availability"><i></i> <span data-i18n="openBooking">Bookings are open</span></span>
+          </div>
+          <label>
+            <span data-i18n="arrival">Check in</span>
+            <input id="arrival" type="date" required />
+          </label>
+          <label>
+            <span data-i18n="departure">Check out</span>
+            <input id="departure" type="date" required />
+          </label>
+          <label>
+            <span data-i18n="guests">Guests</span>
+            <select id="guests">
+              <option value="1" data-i18n="guest1">1 guest</option>
+              <option value="2" selected data-i18n="guest2">2 guests</option>
+              <option value="3" data-i18n="guest3">3 guests</option>
+              <option value="4" data-i18n="guest4">4 guests</option>
+              <option value="5" data-i18n="guest5">5 guests</option>
+              <option value="6" data-i18n="guest6">6 guests</option>
+            </select>
+          </label>
+          <button class="button search-button" type="submit" data-i18n="check">Check availability</button>
+          <p class="form-note" data-i18n="noCharge">No payment is taken in this demo.</p>
+        </form>
+      </section>
+
+      <section class="intro section">
+        <div>
+          <p class="eyebrow" data-i18n="welcomeEyebrow">Welcome to La Marina</p>
+          <h2 data-i18n="welcomeTitle">A holiday your way</h2>
+        </div>
+        <div class="intro-copy">
+          <p data-i18n="welcomeText">Stay at your own pace with the pool area as a natural meeting point. Start with a swim, explore the beaches near Guardamar and return for an easy evening on the terrace.</p>
+          <div class="quick-facts">
+            <span><strong>4</strong> <span data-i18n="factApartments">apartments</span></span>
+            <span><strong>300+</strong> <span data-i18n="factSunnyDays">sunny days</span></span>
+            <span><strong>30 min</strong> <span data-i18n="factAirport">to Alicante Airport*</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="apartments section" id="apartments">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="stayEyebrow">Our apartments</p>
+            <h2 data-i18n="stayTitle">Find your favourite</h2>
+          </div>
+          <p data-i18n="stayText">Four individual apartments with the same relaxed feeling. Every detail and price can be updated easily.</p>
+        </div>
+        <div class="apartment-grid">
+          <article class="apartment-card">
+            <div class="card-image"><img src="assets/stay-living-room.jpg" alt="Bright living room with a balcony and pool view" /><span data-i18n="mostPopular">Most popular</span></div>
+            <div class="card-body"><div class="card-title"><h3 data-i18n="apartmentSol">Apartment Sol</h3><p><span data-i18n="from">from</span> <strong>€89</strong> / <span data-i18n="night">night</span></p></div><p class="card-meta" data-i18n="solMeta">2 bedrooms · 4 guests · Terrace</p><button class="card-link" type="button" data-apartment="Apartment Sol"><span data-i18n="viewApartment">View apartment</span> <span>→</span></button></div>
+          </article>
+          <article class="apartment-card">
+            <div class="card-image"><img src="assets/stay-double-bedroom.jpg" alt="Double bedroom with air conditioning" /></div>
+            <div class="card-body"><div class="card-title"><h3 data-i18n="apartmentMar">Apartment Mar</h3><p><span data-i18n="from">from</span> <strong>€95</strong> / <span data-i18n="night">night</span></p></div><p class="card-meta" data-i18n="marMeta">2 bedrooms · 4 guests · Pool view</p><button class="card-link" type="button" data-apartment="Apartment Mar"><span data-i18n="viewApartment">View apartment</span> <span>→</span></button></div>
+          </article>
+          <article class="apartment-card">
+            <div class="card-image"><img src="assets/stay-sunset-terrace.jpg" alt="Private terrace at sunset" /></div>
+            <div class="card-body"><div class="card-title"><h3 data-i18n="apartmentPalmera">Apartment Palmera</h3><p><span data-i18n="from">from</span> <strong>€82</strong> / <span data-i18n="night">night</span></p></div><p class="card-meta" data-i18n="palmeraMeta">1 bedroom · 2 guests · Balcony</p><button class="card-link" type="button" data-apartment="Apartment Palmera"><span data-i18n="viewApartment">View apartment</span> <span>→</span></button></div>
+          </article>
+          <article class="apartment-card">
+            <div class="card-image"><img src="assets/861827143.jpg" alt="Living room with a terrace and pool view" /></div>
+            <div class="card-body"><div class="card-title"><h3 data-i18n="apartmentCosta">Apartment Costa</h3><p><span data-i18n="from">from</span> <strong>€109</strong> / <span data-i18n="night">night</span></p></div><p class="card-meta" data-i18n="costaMeta">3 bedrooms · 6 guests · Patio</p><button class="card-link" type="button" data-apartment="Apartment Costa"><span data-i18n="viewApartment">View apartment</span> <span>→</span></button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience" id="complex">
+        <div class="experience-image" role="img" aria-label="Familjepoolen på La Marina Sport Complex"></div>
+        <div class="experience-copy">
+          <p class="eyebrow light" data-i18n="complexEyebrow">More than a place to stay</p>
+          <h2 data-i18n="complexTitle">Everything for easy holiday days</h2>
+          <p data-i18n="complexText">The pool is the heart of La Marina Sport Complex — made for lazy afternoons, something good to eat and unhurried time together.</p>
+          <div class="amenities">
+            <div><span>≈</span><p><strong data-i18n="amenityPool">Pool area</strong><small data-i18n="amenityPoolText">Swimming and relaxation</small></p></div>
+            <div><span>☀</span><p><strong data-i18n="amenitySun">Sun terrace</strong><small data-i18n="amenitySunText">Plenty of room in the sun</small></p></div>
+            <div><span>♨</span><p><strong data-i18n="amenityRestaurant">Restaurant & bar</strong><small data-i18n="amenityRestaurantText">Food and drinks close by</small></p></div>
+            <div><span>⌁</span><p><strong data-i18n="amenityWifi">Free Wi-Fi</strong><small data-i18n="amenityWifiText">In the apartments*</small></p></div>
+          </div>
+          <small class="disclaimer" data-i18n="exampleDisclaimer">*Example information to be confirmed with the owner before publication.</small>
+        </div>
+      </section>
+
+      <section class="pool-passes section" id="pool-passes">
+        <div class="passes-intro">
+          <p class="eyebrow" data-i18n="passesEyebrow">Pool access</p>
+          <h2 data-i18n="passesTitle">Choose your pool pass</h2>
+          <p data-i18n="passesText">Visit for a day or make the pool part of your whole holiday. Pass purchases are separate from apartment and restaurant bookings.</p>
+          <div class="passes-note"><span>i</span><p data-i18n="passesPriceNote">The prices below are provisional examples and must be confirmed by the owner before launch.</p></div>
+        </div>
+        <div class="pass-options">
+          <article class="pass-card day-pass">
+            <div class="pass-top"><span class="pass-icon">☀</span><span class="pass-tag" data-i18n="flexible">Flexible</span></div>
+            <p class="eyebrow" data-i18n="dayPassEyebrow">One sunny day</p>
+            <h3 data-i18n="dayPass">Day pass</h3>
+            <p class="pass-price"><strong>€7</strong><span data-i18n="perPerson">per person</span></p>
+            <ul>
+              <li data-i18n="dayPassFeature1">Access to the pool area for one day</li>
+              <li data-i18n="dayPassFeature2">Choose your preferred visit date</li>
+            </ul>
+            <button class="button full-width pass-button" type="button" data-pass="day" data-i18n="buyDayPass">Buy day pass</button>
+          </article>
+          <article class="pass-card week-pass">
+            <div class="pass-top"><span class="pass-icon">7</span><span class="pass-tag" data-i18n="familyValue">Family value</span></div>
+            <p class="eyebrow" data-i18n="weekPassEyebrow">A full week</p>
+            <h3 data-i18n="weekPass">Weekly pool pass</h3>
+            <p class="pass-price"><strong>€70</strong><span data-i18n="familyComposition">2 adults + 1 child</span></p>
+            <ul>
+              <li data-i18n="weekPassFeature1">Pool access for seven consecutive days</li>
+              <li data-i18n="weekPassFeature2">One family pass for three guests</li>
+            </ul>
+            <button class="button full-width pass-button" type="button" data-pass="week" data-i18n="buyWeekPass">Buy weekly pass</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery section" aria-labelledby="gallery-title">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow" data-i18n="galleryEyebrow">The pool area</p>
+            <h2 id="gallery-title" data-i18n="galleryTitle">This is where the holiday begins</h2>
+          </div>
+          <p data-i18n="galleryText">A first look at the real pool area, children's water play and poolside service at La Marina Sport Complex.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-main">
+            <img src="assets/pool-overview.webp" alt="Stora poolen på La Marina Sport Complex under en solig dag" />
+            <figcaption><strong data-i18n="galleryPool">The main pool</strong><span data-i18n="galleryPoolText">Plenty of room for swimming and relaxing</span></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/kids-slides.webp" alt="Färgglada vattenrutschkanor vid barnpoolen" />
+            <figcaption><strong data-i18n="galleryKids">For the little ones</strong><span data-i18n="galleryKidsText">Children's pool with water slides</span></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/pool-cafe.webp" alt="Servering och sittplatser på poolområdet" />
+            <figcaption><strong data-i18n="galleryFood">Refreshments close by</strong><span data-i18n="galleryFoodText">Poolside service with shaded seating</span></figcaption>
+          </figure>
+          <figure class="gallery-wide">
+            <img src="assets/complex-entrance.webp" alt="Entrén till La Marina Sport Complex" />
+            <figcaption><strong data-i18n="galleryWelcome">Welcome in</strong><span data-i18n="galleryWelcomeText">Restaurant, pizzeria and activities on site</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="party-section" id="pool-party">
+        <div class="party-visual">
+          <div class="party-badge"><span data-i18n="every">EVERY</span><strong data-i18n="friSat">FRI & SAT</strong><small>Pool Party Nights</small></div>
+        </div>
+        <div class="party-content">
+          <div class="party-copy">
+            <p class="eyebrow light" data-i18n="partyEyebrow">Pool party & dining</p>
+            <h2 data-i18n="partyTitle">Friday and Saturday nights by the pool</h2>
+            <p data-i18n="partyText">Bring friends and family together for dinner inside the pool area. Table reservations are a separate service and completely independent from apartment bookings.</p>
+            <div class="party-facts">
+              <span><strong>2</strong><small data-i18n="partyFactNights">nights every week</small></span>
+              <span><strong>3</strong><small data-i18n="partyFactTimes">example sittings</small></span>
+              <span><strong>1</strong><small data-i18n="partyFactMood">poolside atmosphere</small></span>
+            </div>
+          </div>
+          <form class="table-booking" id="table-book">
+            <div class="table-form-heading">
+              <div><p class="eyebrow" data-i18n="restaurantBooking">Restaurant booking</p><h3 data-i18n="bookTable">Book a table</h3></div>
+              <span data-i18n="separateStay">Separate from accommodation</span>
+            </div>
+            <label><span data-i18n="tableDate">Date – Friday or Saturday</span><input id="table-date" type="date" required /></label>
+            <div class="table-form-row">
+              <label><span data-i18n="time">Time</span><select id="table-time"><option>18:00</option><option selected>19:30</option><option>21:00</option></select></label>
+              <label><span data-i18n="numberPeople">Number of people</span><select id="table-guests"><option data-i18n="people2">2 people</option><option data-i18n="people3">3 people</option><option selected data-i18n="people4">4 people</option><option data-i18n="people5">5 people</option><option data-i18n="people6">6 people</option><option data-i18n="people7">7+ people</option></select></label>
+            </div>
+            <label><span data-i18n="name">Name</span><input id="table-name" type="text" placeholder="Your name" data-i18n-placeholder="yourName" required /></label>
+            <label><span data-i18n="email">Email</span><input id="table-email" type="email" placeholder="name@example.com" data-i18n-placeholder="emailPlaceholder" required /></label>
+            <button class="button full-width" type="submit" data-i18n="sendTableRequest">Send table request</button>
+            <p class="table-status" id="table-status" role="status" hidden></p>
+            <p class="form-note" data-i18n="tableDemoNote">Demo flow: no actual table reservation is made.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="location section" id="location">
+        <div class="location-copy">
+          <p class="eyebrow" data-i18n="locationEyebrow">At the heart of Costa Blanca</p>
+          <h2 data-i18n="locationTitle">Close to beaches and city life</h2>
+          <p data-i18n="locationText">La Marina Sport Complex is in Urbanización La Marina, San Fulgencio — a lively area with restaurants and everyday services close by.</p>
+          <ul>
+            <li><span>01</span><p><strong data-i18n="nearBeach">La Marina beaches</strong><small data-i18n="nearBeachText">A short drive to the Mediterranean</small></p></li>
+            <li><span>02</span><p><strong>Guardamar del Segura</strong><small data-i18n="nearGuardamarText">Promenade, nature and restaurants</small></p></li>
+            <li><span>03</span><p><strong data-i18n="nearAlicante">Alicante & the airport</strong><small data-i18n="nearAlicanteText">Easy connections for international guests</small></p></li>
+          </ul>
+          <a class="button button-outline" href="https://maps.google.com/?q=La+Marina+Sport+Complex+San+Fulgencio" target="_blank" rel="noreferrer" data-i18n="openMaps">Open in Google Maps</a>
+        </div>
+        <div class="map-card">
+          <div class="map-lines"></div>
+          <div class="map-water">MEDITERRANEAN<br />SEA</div>
+          <div class="map-pin"><i></i><span><strong>La Marina</strong>Sport Complex</span></div>
+          <div class="map-address">C. Berna 2A<br />03177 San Fulgencio, Alicante</div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <p class="eyebrow light" data-i18n="ctaEyebrow">Your holiday starts here</p>
+        <h2 data-i18n="ctaTitle">Ready for La Marina?</h2>
+        <p data-i18n="ctaText">Send an apartment booking request and we will get back to you with availability and a final price.</p>
+        <a class="button button-light" href="#book" data-i18n="checkDates">Check your dates</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><span class="brand-plaque footer-plaque"><strong>La Marina</strong><small>SPORT COMPLEX</small></span></div>
+      <div><p class="footer-label" data-i18n="address">Address</p><p>C. Berna 2A<br />03177 San Fulgencio, Alicante</p></div>
+      <div><p class="footer-label" data-i18n="contact">Contact</p><p><a href="tel:+34966797792">+34 966 79 77 92</a><br /><a href="mailto:hola@lamarinasportcomplex.es">hola@lamarinasportcomplex.es*</a></p></div>
+      <div><p class="footer-label" data-i18n="information">Information</p><p><a href="#" data-i18n="bookingTerms">Booking terms*</a><br /><a href="#" data-i18n="privacyCookies">Privacy & cookies*</a></p></div>
+      <p class="footer-bottom" data-i18n="footerNote">© 2026 La Marina Sport Complex · Concept version — legal texts and registration numbers will be added before launch.</p>
+    </footer>
+
+    <nav class="mobile-booking-bar" aria-label="Quick booking" data-i18n-aria="quickBooking">
+      <a href="#book"><span>⌂</span><strong data-i18n="bookNow">Book an apartment</strong></a>
+      <a href="#table-book"><span>♨</span><strong data-i18n="bookTable">Book a table</strong></a>
+    </nav>
+
+    <div class="modal" id="booking-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close" data-i18n-aria="close" data-close-modal>×</button>
+        <p class="eyebrow" data-i18n="bookingRequest">Apartment booking request</p>
+        <h2 id="modal-title" data-i18n="availableApartments">Available apartments</h2>
+        <p id="modal-summary" data-i18n="chooseApartment">Choose an apartment to continue.</p>
+        <div class="modal-option"><div><strong id="modal-apartment">Apartment Sol</strong><small data-i18n="examplePrice">Example price including mandatory charges</small></div><strong id="modal-price">€356</strong></div>
+        <label class="modal-field"><span data-i18n="emailAddress">Email address</span><input type="email" placeholder="name@example.com" data-i18n-placeholder="emailPlaceholder" /></label>
+        <button class="button full-width" id="request-button" type="button" data-i18n="sendRequest">Send request</button>
+        <p class="form-note" data-i18n="bookingDemoNote">This is a demo flow. No booking or payment is completed.</p>
+      </section>
+    </div>
+
+    <div class="modal" id="pass-modal" hidden>
+      <div class="modal-backdrop" data-close-pass></div>
+      <section class="modal-panel pass-modal-panel" role="dialog" aria-modal="true" aria-labelledby="pass-modal-title">
+        <button class="modal-close" type="button" aria-label="Close" data-i18n-aria="close" data-close-pass>×</button>
+        <p class="eyebrow" data-i18n="poolPassPurchase">Pool pass purchase</p>
+        <h2 id="pass-modal-title" data-i18n="completePassRequest">Complete your pass request</h2>
+        <div class="modal-option"><div><strong id="selected-pass">Day pass</strong><small data-i18n="provisionalPrice">Provisional example price</small></div><strong id="selected-pass-price">€7</strong></div>
+        <label class="modal-field"><span data-i18n="firstVisitDate">First visit date</span><input id="pass-date" type="date" required /></label>
+        <label class="modal-field"><span id="pass-quantity-label" data-i18n="numberPasses">Number of passes</span><select id="pass-quantity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+        <label class="modal-field"><span data-i18n="emailAddress">Email address</span><input id="pass-email" type="email" placeholder="name@example.com" data-i18n-placeholder="emailPlaceholder" required /></label>
+        <button class="button full-width" id="pass-request-button" type="button" data-i18n="continuePass">Continue with pool pass</button>
+        <p class="form-note" data-i18n="passDemoNote">Demo flow: no payment is taken and no pool pass is issued.</p>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" hidden data-i18n="toastText">Thank you! In the live version, this request would now be sent to the owner.</div>
+    <div class="cookie-banner" id="cookie-banner">
+      <div><strong data-i18n="cookieTitle">Cookies in this demo</strong><p data-i18n="cookieText">This prototype does not use analytics or marketing cookies.</p></div>
+      <button type="button" id="cookie-close" data-i18n="okay">Okay</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
