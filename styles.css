@@ -334,5 +334,11 @@ footer a:hover { color: #fff; }.footer-bottom { position: absolute; left: clamp(
   .search-card label { font-size: 9px; }
   .quick-facts > span { min-width: 0; }
   .gallery-grid figure,.gallery-grid .gallery-main { height: auto; aspect-ratio: 4 / 3; }
+  .table-booking { justify-items: center; text-align: center; }
+  .table-form-heading { width: 100%; align-items: center; }
+  .table-booking > label,.table-form-row { width: 100%; }
+  .table-booking label { align-items: center; }
+  .table-booking input[type="date"] { align-self: center; }
+  .table-booking .full-width { justify-self: center; }
   footer { padding-inline: 18px; }
 }
