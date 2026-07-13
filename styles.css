@@ -128,7 +128,7 @@ h2 { font-size: clamp(38px, 4vw, 62px); letter-spacing: -.025em; }
 .party-content { padding: 105px clamp(24px, 8vw, 130px) 110px; display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(55px,9vw,130px); align-items: start; }
 .party-copy > p:not(.eyebrow) { max-width: 560px; margin: 26px 0 36px; color: rgba(255,255,255,.67); line-height: 1.8; }
 .party-facts { display: flex; gap: 20px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,.18); }
-.party-facts span { flex: 1; }.party-facts strong,.party-facts small { display: block; }.party-facts strong { color: #e8cdb7; font: 500 30px "Playfair Display",serif; }.party-facts small { margin-top: 5px; color: rgba(255,255,255,.54); font-size: 9px; }
+.party-facts span { flex: 1; text-align: center; }.party-facts strong,.party-facts small { display: block; }.party-facts strong { color: #e8cdb7; font: 500 30px "Playfair Display",serif; }.party-facts small { margin-top: 5px; color: rgba(255,255,255,.54); font-size: 9px; }
 .table-booking { padding: 34px; display: grid; gap: 16px; background: #fff; color: var(--ink); box-shadow: var(--shadow); }
 .table-form-heading { display: flex; align-items: start; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }.table-form-heading .eyebrow { margin-bottom: 7px; }.table-form-heading h3 { margin: 0; font: 500 35px "Playfair Display",serif; }.table-form-heading > span { padding: 7px 10px; background: var(--cream); color: var(--muted); font-size: 8px; text-transform: uppercase; letter-spacing: .08em; }
 .table-booking label { display: flex; flex-direction: column; gap: 7px; color: var(--muted); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
