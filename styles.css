@@ -201,7 +201,7 @@ footer a:hover { color: #fff; }.footer-bottom { position: absolute; left: clamp(
   .mobile-booking-bar { position: fixed; z-index: 80; left: 0; right: 0; bottom: 0; height: 68px; display: grid; grid-template-columns: 1fr 1fr; background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -8px 25px rgba(20,35,39,.12); padding-bottom: env(safe-area-inset-bottom); }.mobile-booking-bar a { display: flex; align-items: center; justify-content: center; gap: 9px; font-size: 11px; }.mobile-booking-bar a + a { background: var(--coral); color: #fff; }.mobile-booking-bar span { font-size: 18px; }.mobile-booking-bar strong { font-size: 11px; }.toast { bottom: 85px; width: calc(100% - 32px); text-align: center; }.cookie-banner { bottom: 82px; }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 560px) {
   .hero { padding-inline: 15px; }.hero-links { flex-direction: column; }.search-card { grid-template-columns: 1fr; margin-top: 42px; padding: 18px 16px; }.search-card > * { grid-column: 1 !important; }.quick-facts { flex-wrap: wrap; }.quick-facts > span { min-width: 28%; }.card-title { align-items: flex-start; flex-direction: column; gap: 8px; }.pass-options { grid-template-columns: 1fr; }.pass-card { padding: 26px 22px; }.pass-card ul { min-height: 0; }.gallery-grid { display: flex; flex-direction: column; }.gallery-grid figure { height: 290px; }.gallery-grid .gallery-main { height: 360px; }.table-form-row { grid-template-columns: 1fr; }.table-form-heading { flex-direction: column; }.party-facts { gap: 10px; }footer { grid-template-columns: 1fr; }.footer-brand { grid-column: 1; }
 }
 
@@ -322,14 +322,14 @@ footer a:hover { color: #fff; }.footer-bottom { position: absolute; left: clamp(
   .toast { bottom: 88px; border-radius: 22px; }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 560px) {
   .demo-ribbon { display: none; }
   .hero { margin-top: -70px; padding-top: 142px; }
   .hero-links { flex-direction: row; }
   .hero-links .button { font-size: 10px; }
-  .search-card { grid-template-columns: 1fr 1fr; }
-  .search-card > * { grid-column: auto !important; }
-  .search-card-heading,.search-card label:nth-of-type(3),.search-button,.search-card .form-note { grid-column: 1 / -1 !important; }
+  .search-card { grid-template-columns: minmax(0, 1fr); }
+  .search-card > * { min-width: 0; grid-column: 1 !important; }
+  .search-card input,.search-card select { min-width: 0; width: 100%; }
   .search-card label { font-size: 9px; }
   .quick-facts > span { min-width: 0; }
   .gallery-grid figure,.gallery-grid .gallery-main { height: 280px; }
